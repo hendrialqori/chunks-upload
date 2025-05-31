@@ -12,8 +12,8 @@ Demonstrates how to upload large files in chunks using a Go backend and Vue fron
 
 
 ## 🚀 Features
-
 - Upload large files in chunks (default 1MB).
+- Multiple upload
 - Resumable uploads (pause/continue).
 - Automatic file merge after upload at folder `/uploads` (server)
 - Supports progress tracking.
