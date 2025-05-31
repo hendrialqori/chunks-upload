@@ -77,4 +77,4 @@ npm run dev
 🔗 Ensure the API calls in the client point to http://localhost:3000
 
 ## MIT License
-Please feel free to use for personal and commercial purposes.
+Feel free to use for personal.
