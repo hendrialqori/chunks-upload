@@ -18,6 +18,32 @@ Demonstrates how to upload large files in chunks using a Go backend and Vue fron
 - Automatic file merge after upload at folder `/uploads` (server)
 - Supports progress tracking.
 
+## 🚀 API Endpoints
+
+### POST /upload
+
+Upload a single file chunk.  
+Send the chunk as **form-data** with the key: `chunk`.
+
+Required query parameters:  
+- `fileName` — original file name (e.g., `document.pdf`)  
+- `chunkIndex` — chunk index (starting from 0)
+
+---
+
+### POST /merge-chunks
+
+Merge all uploaded chunks into a complete file.
+
+Request body (JSON):
+
+```json
+{
+  "fileName": "filename.pdf",
+  "totalChunk": 10
+}
+```
+
 ## 🧑‍💻 How to Clone and Run
 
 ### 1. Clone the Repository
