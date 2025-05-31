@@ -1,5 +1,5 @@
 # Chunked File Upload using Go 
-![Chunk upload preview](assets/chunks.gif)
+![Chunk upload preview](assets/chunks-upload.gif)
 
 Demonstrates how to upload large files in chunks using a Go backend and Vue frontend. The backend is built with `net/http` and `httprouter`, and the frontend uses plain `Vue` with `Axios` for HTTP requests.
 
