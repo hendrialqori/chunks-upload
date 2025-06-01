@@ -6,20 +6,13 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-	"os"
 
 	"github.com/julienschmidt/httprouter"
 	"github.com/rs/cors"
 )
 
 func main() {
-	var (
-		route = httprouter.New()
-	)
-
-	if err := os.MkdirAll("./uploads", os.ModePerm); err != nil {
-		panic(err)
-	}
+	var route = httprouter.New()
 
 	route.POST("/upload", handler.UploadFile)
 	route.POST("/merge-chunks", handler.MergeChunks)
