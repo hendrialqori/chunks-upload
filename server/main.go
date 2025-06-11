@@ -37,5 +37,6 @@ func main() {
 		Handler: handler,
 	}
 
+	log.Printf("Server is running on %s", server.Addr)
 	log.Fatal(server.ListenAndServe())
 }
